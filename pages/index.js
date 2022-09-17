@@ -12,6 +12,7 @@ function Home() {
           <a>Products</a>
         </Link>
       </div>
+      <div>Pre-rendering</div>
     </>
   );
 }
