@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 function Doc() {
   const route = useRouter();
   const { params = [] } = route;
-  console.log(route.query.params);
   if (params.length > 0) {
     return (
       <h1>

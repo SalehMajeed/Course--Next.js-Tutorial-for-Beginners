@@ -13,6 +13,9 @@ function Home() {
         </Link>
       </div>
       <div>Pre-rendering</div>
+      <Link href="/posts">
+        <a>Posts</a>
+      </Link>
     </>
   );
 }
