@@ -22,12 +22,14 @@ function ListByCatergory({ articles, category }) {
 export default ListByCatergory;
 
 export async function getServerSideProps(context) {
-  const { params } = context;
-  const res = await fetch(
+  const { params, req, res, query } = context;
+  console.log(query);
+  const response = await fetch(
     `http://localhost:3004/news?category=${params.category}`
   );
-  const data = await res.json();
-  console.log(data);
+  const data = await response.json();
+  console.log(req.headers.cookie);
+  res.setHeader("Set-Cookie", ["name=user"]);
 
   return {
     props: {
