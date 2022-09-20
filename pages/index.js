@@ -16,6 +16,11 @@ function Home() {
       <Link href="/posts">
         <a>Posts</a>
       </Link>
+      <div>
+        <Link href="/random">
+          <a>Random Data</a>
+        </Link>
+      </div>
     </>
   );
 }
