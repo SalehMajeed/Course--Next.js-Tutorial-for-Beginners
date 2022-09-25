@@ -1,6 +1,5 @@
 function About() {
-    return <h1>About Page</h1>;
-  }
-  
-  export default About;
-  
+  return <button className="btn btn-primary">button</button>;
+}
+
+export default About;
