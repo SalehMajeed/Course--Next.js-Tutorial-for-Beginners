@@ -1,8 +1,13 @@
 import Link from "next/link";
+import Head from "next/head";
 
 function Home() {
   return (
     <>
+      <Head>
+        <title>Code </title>
+        <meta name="description" content="learn" />
+      </Head>
       <div>
         <h1>Home Page With Link</h1>
         <Link href="/blog">
