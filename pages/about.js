@@ -1,4 +1,5 @@
 // import style from "../styles/About.module.css";
+import Footer from "../components/Footer";
 import style from "../styles/About.module.scss";
 function About() {
   return (
@@ -9,3 +10,13 @@ function About() {
 }
 
 export default About;
+
+About.getLayout = function pageLayout(page) {
+  console.log(page);
+  return (
+    <>
+      {page}
+      <Footer />
+    </>
+  );
+};
