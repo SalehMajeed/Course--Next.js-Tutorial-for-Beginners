@@ -1,6 +1,9 @@
 // import styles from "../styles/Contact.module.css";
 import styles from "../styles/Contact.module.scss";
-export default function contact() {
+function contact() {
   // return <h2 className={styles.highlight}>contact Page</h2>;
-  <div className={styles.highlightscss}>Contact</div>;
+  // return <div className={styles.highlightscss}>Contact</div>;
+  return <div style={{ color: "red" }}>Contact</div>;
 }
+
+export default contact;
